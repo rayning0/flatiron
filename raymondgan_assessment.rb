@@ -40,7 +40,7 @@ school[:founded_in] = 2013
 
 # b. Add a student to the school's students' array.
 
-school[:students] << {name: "Raymond", grade: "A"}  # :students is array of hashes
+school[:students] << {name: "Natalie Dormer", grade: "A"}  # :students is array of hashes
  
 # c. Remove "Billy" from the students' array. [2 ways]
 
@@ -106,22 +106,71 @@ def grade(student, school)
   end
 end
 
-student = 'Marissa'
-puts "#{student}'s grade is #{grade(student, school)}"
+while true
+  puts "Enter student's name. I'll tell you grade. Hit 'Enter' to quit:"
+  student = gets.chomp
+  break if student == ''
+  puts "#{student}'s grade is #{grade(student, school)}"
+end
 
 # ii. Then use it to refactor your work in 3.i.
+
+def subject(instructor, school)
+  school[:instructors].each do |i|
+    return i[:subject] if i[:name] == instructor
+  end
+end
+
+while true
+  puts "Enter either student or instructor's name. I'll tell you either grade or subject. Hit 'Enter' to quit:"
+  input = gets.chomp
+  break if input == ''
+
+  # if you enter instructor's name, grade() will not find it and instead will return array
+  if !grade(input, school).is_a?(Array)     # if you enter student's name
+    puts "#{input}'s grade is #{grade(input, school)}"
+  else                                      # if you enter instructor's name
+    puts "#{input}'s subject is #{subject(input, school)}"
+  end
+end
  
-# b. i.Create a method to udpate a instructor's subject given the instructor and the new subject. 
+# b. i. Create a method to update an instructor's subject given the instructor and the new subject. 
+
+def update(instructor, subject, school)
+  school[:instructors].each do |i|
+    i[:subject] = subject if i[:name] == instructor
+  end
+end
  
 # ii. Then use it to update Blake's subject to "being terrible".
+
+update('Blake', 'being terrible', school)
+puts school[:instructors]
+puts
  
 # c. i. Create a method to add a new student to the schools student array. 
+
+def addstudent(student, grade, semester, school)
+  school[:students] << {name: student, grade: grade, semester: semester} 
+end
  
 # ii. Then use it to add yourself to the school students array.
+
+addstudent('Raymond', 'A', 'Summer', school)
+puts school[:students]
+puts
  
 # d. i. Create a method that adds a new key at the top level of the school hash, given a key and a value. 
  
+def addkey(key, value, school)
+  school[key] = value
+end
+
 # ii. Then use it to add a "Ranking" key with the value 1.
+
+addkey(:Ranking, 1, school)
+puts school
+puts
 
 #5. Object orientation
 
