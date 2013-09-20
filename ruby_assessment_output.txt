@@ -1,0 +1,166 @@
+--------------------Question 1--------------------------
+["Blake", "Ashley", "Jeff", "Raymond"]
+Ashley
+2
+
+--------------------Question 2--------------------------
+{:name=>"Ashley", :age=>27, :location=>"NYC"}
+Ashley
+:age
+
+--------------------Question 3--------------------------
+Marissa has a B grade
+karaoke is subject of instructor Jeff
+
+Printing only top-level keys of school:
+
+Happy Funtime School
+NYC
+{:name=>"Blake", :subject=>"being awesome"}
+{:name=>"Ashley", :subject=>"being almost better than Blake"}
+{:name=>"Jeff", :subject=>"karaoke"}
+{:name=>"Marissa", :grade=>"B", :semester=>"Summer"}
+{:name=>"Frank", :grade=>"F", :semester=>"Summer"}
+{:name=>"Natalie Dormer", :grade=>"A", :semester=>"Summer"}
+2013
+
+Printing values of EVERYTHING, included nested hashes:
+
+Happy Funtime School
+NYC
+["Blake", "being awesome"]
+["Ashley", "being almost better than Blake"]
+["Jeff", "karaoke"]
+["Marissa", "B", "Summer"]
+["Frank", "F", "Summer"]
+["Natalie Dormer", "A", "Summer"]
+2013
+
+--------------------Question 4--------------------------
+Enter student's name. I'll tell you grade. Hit 'Enter' to quit:
+Natalie Dormer
+Natalie Dormer's grade is A
+Enter student's name. I'll tell you grade. Hit 'Enter' to quit:
+Frank
+Frank's grade is F
+Enter student's name. I'll tell you grade. Hit 'Enter' to quit:
+
+Enter either student or instructor's name. I'll tell you either grade or subject. Hit 'Enter' to quit:
+Ashley
+Ashley's subject is being almost better than Blake
+Enter either student or instructor's name. I'll tell you either grade or subject. Hit 'Enter' to quit:
+Marissa
+Marissa's grade is B
+Enter either student or instructor's name. I'll tell you either grade or subject. Hit 'Enter' to quit:
+Blake
+Blake's subject is being awesome
+Enter either student or instructor's name. I'll tell you either grade or subject. Hit 'Enter' to quit:
+Frank
+Frank's grade is F
+Enter either student or instructor's name. I'll tell you either grade or subject. Hit 'Enter' to quit:
+
+{:name=>"Blake", :subject=>"being terrible"}
+{:name=>"Ashley", :subject=>"being almost better than Blake"}
+{:name=>"Jeff", :subject=>"karaoke"}
+
+{:name=>"Marissa", :grade=>"B", :semester=>"Summer"}
+{:name=>"Frank", :grade=>"F", :semester=>"Summer"}
+{:name=>"Natalie Dormer", :grade=>"A", :semester=>"Summer"}
+{:name=>"Raymond", :grade=>"A", :semester=>"Summer"}
+
+{:name=>"Happy Funtime School", :location=>"NYC", :instructors=>[{:name=>"Blake", :subject=>"being terrible"}, {:name=>"Ashley", :subject=>"being almost better than Blake"}, {:name=>"Jeff", :subject=>"karaoke"}], :students=>[{:name=>"Marissa", :grade=>"B", :semester=>"Summer"}, {:name=>"Frank", :grade=>"F", :semester=>"Summer"}, {:name=>"Natalie Dormer", :grade=>"A", :semester=>"Summer"}, {:name=>"Raymond", :grade=>"A", :semester=>"Summer"}], :founded_in=>2013, :Ranking=>1}
+
+--------------------Question 5--------------------------
+School 1:
+Name: Flatiron School, Location: Manhattan, Ranking: 1
+Students:
+{:name=>"Raymond", :grade=>"A", :semester=>"fall"}
+{:name=>"Natalie", :grade=>"B", :semester=>"winter"}
+{:name=>"Yvonne", :grade=>"C", :semester=>"spring"}
+Instructors:
+{:name=>"Avi", :subject=>"RoR"}
+{:name=>"Batman", :subject=>"Being a badass"}
+
+School 2:
+Name: Dev Bootcamp, Location: San Francisco, Ranking: 2
+Students:
+{:name=>"Homer", :grade=>"F", :semester=>"fall"}
+{:name=>"Marge", :grade=>"B", :semester=>"winter"}
+{:name=>"Maggie", :grade=>"A", :semester=>"fall"}
+Instructors:
+{:name=>"Kush", :subject=>"RoR"}
+{:name=>"Spider-Man", :subject=>"Being snarky"}
+{:name=>"Scarlett", :subject=>"Being Black Widow"}
+
+Give me new ranking for school 1: 5
+Give me new student for school 1 in format 'name, grade, semester':
+Tom Cruise,S(Scientology),apocalypse from the theta planet
+Give me name of student to delete: Yvonne
+Give me new ranking for school 2: 10
+Give me new student for school 2 in format 'name, grade, semester':
+Lisa,A++,all semesters--she's a nerd
+Give me name of student to delete: Marge
+--------------After all your changes--------------------
+Name: Flatiron School, Location: Manhattan, Ranking: 5
+Students:
+{:name=>"Raymond", :grade=>"A", :semester=>"fall"}
+{:name=>"Natalie", :grade=>"B", :semester=>"winter"}
+{:name=>"Tom Cruise", :grade=>"S(Scientology)", :semester=>"apocalypse from the theta planet"}
+Instructors:
+{:name=>"Avi", :subject=>"RoR"}
+{:name=>"Batman", :subject=>"Being a badass"}
+
+Name: Dev Bootcamp, Location: San Francisco, Ranking: 10
+Students:
+{:name=>"Homer", :grade=>"F", :semester=>"fall"}
+{:name=>"Maggie", :grade=>"A", :semester=>"fall"}
+{:name=>"Lisa", :grade=>"A++", :semester=>"all semesters--she's a nerd"}
+Instructors:
+{:name=>"Kush", :subject=>"RoR"}
+{:name=>"Spider-Man", :subject=>"Being snarky"}
+{:name=>"Scarlett", :subject=>"Being Black Widow"}
+
+Just emptied SCHOOLS array. What's inside?
+Nothing. SCHOOLS = []
+--------------------Question 6--------------------------
+School 3:
+Name: Harvard, Location: Boston, Ranking: 1
+Students:
+Name: Flash, Grade: A, Semester: fall
+Name: Irina, Grade: B, Semester: winter
+Name: Glenda, Grade: C, Semester: spring
+Instructors:
+{:name=>"Robert", :subject=>"Scuba diving"}
+{:name=>"Olga", :subject=>"Modeling"}
+
+School 4:
+Name: Yale, Location: New Haven, Ranking: 2
+Students:
+Name: Pierre, Grade: F, Semester: spring
+Name: Juliette, Grade: B, Semester: winter
+Name: Audrey, Grade: A, Semester: fall
+Instructors:
+{:name=>"Reich", :subject=>"Government"}
+{:name=>"Atkins", :subject=>"Chemistry"}
+{:name=>"Judd", :subject=>"Physics"}
+
+Give me new ranking for school 4: 50
+Give me new student for school 4 in format 'name, grade, semester':
+Madonna,Z,wild and crazy
+Give me name of student to find: Juliette
+Name: Juliette, Grade: B, Semester: winter
+Give me name of student to delete: Pierre
+Give me new instructor for school 4 in format 'name, subject':
+President Assad,Chemical Weapons for Poets
+
+----------School 4 (after all your changes-------------
+Name: Yale, Location: New Haven, Ranking: 50
+Students:
+Name: Juliette, Grade: B, Semester: winter
+Name: Audrey, Grade: A, Semester: fall
+Name: Madonna, Grade: Z, Semester: wild and crazy
+Instructors:
+{:name=>"Reich", :subject=>"Government"}
+{:name=>"Atkins", :subject=>"Chemistry"}
+{:name=>"Judd", :subject=>"Physics"}
+{:name=>"President Assad", :subject=>"Chemical Weapons for Poets"}
