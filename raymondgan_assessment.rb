@@ -193,6 +193,7 @@ e. Create a method to add a student to the school, given a name, a grade, and a 
 f. Create a method to remove a student from the school, given a name
 g. Create an array constant SCHOOLS that stores all instances of your School class.
 =end
+puts "--------------------Question 5--------------------------"
 
 SCHOOLS = []
 
@@ -253,7 +254,6 @@ s1.addstudent('Yvonne', 'C', 'spring')
 s1.addinstructor('Avi', 'RoR')
 s1.addinstructor('Batman', 'Being a badass')
 
-puts "--------------------Question 5--------------------------"
 puts "School 1:"
 pschool(SCHOOLS[0])
 
@@ -422,3 +422,79 @@ puts "\n----------School 4 (after all your changes-------------"
 pschool(SCHOOLS[1])
 
 #7. Self
+
+# a. What should this Class print to the screen when defined/loaded?
+
+puts "7a. It prints 'hello', from class method Student.say_hello (or self.say_hello)."
+puts "'puts self' makes it print 'Student'."
+
+class Student
+
+  def self.say_hello
+    puts "hello"
+  end
+
+  say_hello
+  puts self
+
+end
+
+# b. What should this Class print to the screen when defined/loaded?
+
+puts "\n7b. It only prints 'Student,' since class method 'say_hello' does 'puts self', and this is the 'Student' class."
+
+class Student
+
+  def self.say_hello
+    puts self
+  end
+
+  say_hello
+
+end
+
+# c. What should this Class print to the screen when defined/loaded?
+
+puts "\n7c. It prints class name and object ID, since 'new' forces Student class to instantiate itself."
+
+class Student
+
+  def initialize
+    puts self
+  end
+
+  new     # forces it to instantiate itself and create an object
+
+end 
+
+# d. What should this code print to the screen when run?
+
+puts "\n7d. It puts class name 'Student' with object ID."
+
+  class Student
+
+    def say_hello
+      puts self
+    end
+
+  end
+
+Student.new.say_hello
+
+# e. What should this code print to the screen when run?
+
+puts "\n7e. It puts class name 'Student' with object ID (since it got instantiated), plus 'goodbye' (since 'say_goodbye' method was called."
+
+  class Student
+
+    def say_hello
+      puts say_goodbye
+    end
+
+    def say_goodbye
+      "goodbye"
+    end
+
+  end
+
+Student.new.say_hello

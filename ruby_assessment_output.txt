@@ -164,3 +164,22 @@ Instructors:
 {:name=>"Atkins", :subject=>"Chemistry"}
 {:name=>"Judd", :subject=>"Physics"}
 {:name=>"President Assad", :subject=>"Chemical Weapons for Poets"}
+
+7a. It prints 'hello', from class method Student.say_hello (or self.say_hello).
+'puts self' makes it print 'Student'.
+hello
+Student
+
+7b. It only prints 'Student,' since class method 'say_hello' does 'puts self', and this is the 'Student' class.
+Student
+
+7c. It prints class name and object ID, since 'new' forces Student class to instantiate itself.
+#<Student:0x007fa334098628>
+
+7d. It puts class name 'Student' with object ID.
+#<Student:0x007fa3340984c0>
+#<Student:0x007fa3340984c0>
+
+7e. It puts class name 'Student' with object ID (since it got instantiated), plus 'goodbye' (since 'say_goodbye' method was called.
+#<Student:0x007fa3340982e0>
+goodbye
