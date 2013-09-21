@@ -165,6 +165,7 @@ Instructors:
 {:name=>"Judd", :subject=>"Physics"}
 {:name=>"President Assad", :subject=>"Chemical Weapons for Poets"}
 
+--------------------Question 7--------------------------
 7a. It prints 'hello', from class method Student.say_hello (or self.say_hello).
 'puts self' makes it print 'Student'.
 hello

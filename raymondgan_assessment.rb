@@ -423,6 +423,7 @@ pschool(SCHOOLS[1])
 
 #7. Self
 
+puts "--------------------Question 7--------------------------"
 # a. What should this Class print to the screen when defined/loaded?
 
 puts "7a. It prints 'hello', from class method Student.say_hello (or self.say_hello)."
