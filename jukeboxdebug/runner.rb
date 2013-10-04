@@ -1,5 +1,4 @@
 require_relative './jukebox.rb'
-require 'pry'
  
 def run
   puts "Welcome to Ruby Console Jukebox!"

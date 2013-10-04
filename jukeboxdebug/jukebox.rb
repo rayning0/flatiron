@@ -1,5 +1,4 @@
 require_relative './song_library.rb'
-require 'pry'
 
 def list_artist(artist, album_hash)
    artist_list = "\n---------------\n"
